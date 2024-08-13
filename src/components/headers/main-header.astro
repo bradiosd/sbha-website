@@ -1,0 +1,290 @@
+---
+const SocialBlock = `
+  <div class="info clearfix pull-right">
+    <ul class="social-links clearfix">
+      <li>
+        <a href="https://facebook.com/smartbirdha" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com/smartbirdha" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/104221943" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://tiktok.com/@smartbirdha" target="_blank">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://youtube.com/@smartbirdha" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/smartbirdha" target="_blank">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+`;
+
+const ContactBlock = `
+  <ul class="info-list clearfix pull-right">
+    <li>
+      <div class="icon-box">
+        <i class="icon-email-2"></i>
+      </div>
+      <p>Email Us</p>
+      <h5>
+        <a href="mailto:hello@smartbirdha.com"
+          >hello@smartbirdha.com</a
+        >
+      </h5>
+    </li>
+    <li>
+      <div class="icon-box">
+        <i class="icon-placeholder"></i>
+      </div>
+      <p>Location</p>
+      <h5>Oxford & Bucks</h5>
+    </li>
+  </ul>
+  <div class="support-box">
+    <i class="icon-dial-pad"></i>
+    <p>Call Us</p>
+    <h5>
+      <a href="tel:01865704177">01865 704177</a>
+    </h5>
+  </div>
+`;
+---
+
+<style is:inline>
+  .header-upper-2 {
+    padding-bottom: 25px;
+  }
+
+  @media only screen and (max-width: 499px) {
+    .main-header.style-four .header-top .social-links {
+      margin-top: 5px;
+      float: inherit;
+    }
+  }
+
+  .main-header.style-four .header-top .social-links {
+    margin-right: 10px;
+    padding-right: 0;
+  }
+
+  .main-header.style-four .header-top .social-links:before {
+    width: 0;
+  }
+</style>
+
+<header class="main-header style-four">
+  <!-- mobile-header-info -->
+  <div class="page-header-mobile-info">
+    <div class="page-header-mobile-info-content">
+      <div class="header-top">
+        <div class="auto-container">
+          <div class="top-inner clearfix">
+            <Fragment set:html={SocialBlock} />
+          </div>
+        </div>
+      </div>
+      <div class="header-upper-2">
+        <div class="upper-inner clearfix">
+          <div class="logo-box pull-left">
+            <figure class="logo">
+              <a href="index.html"
+                ><img src="assets/images/logo-wide.png" alt="" width="250" /></a
+              >
+            </figure>
+          </div>
+          <Fragment set:html={ContactBlock} />
+        </div>
+      </div>
+    </div>
+    <div class="toggle-box clearfix">
+      <div class="page-header-mobile-info-toggle"></div>
+      <figure class="logo pull-right">
+        <a href="index.html"
+          ><img src="assets/images/logo-wide.png" alt="" width="200" /></a
+        >
+      </figure>
+    </div>
+  </div>
+
+  <!-- header-top -->
+  <div class="header-top auto-hidden">
+    <div class="auto-container">
+      <div class="top-inner clearfix">
+        <Fragment set:html={SocialBlock} />
+      </div>
+    </div>
+  </div>
+  <div class="auto-container">
+    <div class="main-header-box">
+      <div class="main-box">
+        <div class="header-upper-2 auto-hidden">
+          <div class="upper-inner clearfix">
+            <div class="logo-box pull-left">
+              <figure class="logo">
+                <a href="index.html"
+                  ><img
+                    src="assets/images/logo-wide.png"
+                    alt=""
+                    width="250"
+                  /></a
+                >
+              </figure>
+            </div>
+            <Fragment set:html={ContactBlock} />
+          </div>
+        </div>
+        <div class="header-lower">
+          <div class="outer-box clearfix">
+            <div class="menu-area clearfix pull-left">
+              <!--Mobile Navigation Toggler-->
+              <div class="mobile-nav-toggler">
+                <i class="icon-bar"></i>
+                <i class="icon-bar"></i>
+                <i class="icon-bar"></i>
+              </div>
+              <nav class="main-menu navbar-expand-md navbar-light">
+                <div
+                  class="collapse navbar-collapse show clearfix"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navigation clearfix">
+                    <li class="current dropdown">
+                      <a href="index.html">Home</a>
+                      <ul>
+                        <li><a href="index.html">CCTV</a></li>
+                        <li><a href="index-2.html">Cyber Security</a></li>
+                        <li><a href="index-3.html">Body Guard</a></li>
+                        <li><a href="index-4.html">Smart Home</a></li>
+                        <li><a href="index-5.html">Locksmiths</a></li>
+                        <li><a href="index-6.html">Energy Management</a></li>
+                        <li><a href="index-onepage.html">OnePage Home</a></li>
+                        <li><a href="index-rtl.html">RTL Home</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="index.html">About</a>
+                      <ul>
+                        <li><a href="about.html">Our Company</a></li>
+                        <li><a href="team.html">Professional Team</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="index.html">Services</a>
+                      <ul>
+                        <li><a href="service.html">All Services</a></li>
+                        <li>
+                          <a href="service-details.html">Install & Configure</a>
+                        </li>
+                        <li>
+                          <a href="service-details-2.html">Repair & Service</a>
+                        </li>
+                        <li>
+                          <a href="service-details-3.html">Maintenance</a>
+                        </li>
+                        <li>
+                          <a href="service-details-4.html">Video Verification</a
+                          >
+                        </li>
+                        <li>
+                          <a href="service-details-5.html">Video Surveillence</a
+                          >
+                        </li>
+                        <li>
+                          <a href="service-details-6.html"
+                            >Interactive Security</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="index.html">Shop</a>
+                      <ul>
+                        <li><a href="shop.html">Products</a></li>
+                        <li><a href="shop-details.html">Single Product</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="account.html">My Account</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="index.html">Blog</a>
+                      <ul>
+                        <li><a href="blog.html">Blog Grid View</a></li>
+                        <li><a href="blog-2.html">Blog With Sidebar</a></li>
+                        <li><a href="blog-details.html">Single Post</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="index.html">Pages</a>
+                      <ul>
+                        <li class="dropdown">
+                          <a href="index.html">Projects</a>
+                          <ul>
+                            <li><a href="project.html">3 Columns Grid</a></li>
+                            <li><a href="project-2.html">4 Columns Grid</a></li>
+                            <li>
+                              <a href="project-3.html">Title Overlay 01</a>
+                            </li>
+                            <li>
+                              <a href="project-4.html">Title Overlay 02</a>
+                            </li>
+                            <li>
+                              <a href="project-details.html">Project Details</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="faq.html">Faq’s</a></li>
+                        <li><a href="error.html">404</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="btn-box">
+              <a href="index-4.html"
+                >Request Demo<i class="fas fa-angle-right"></i></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--sticky Header-->
+  <div class="sticky-header">
+    <div class="auto-container">
+      <div class="outer-box clearfix">
+        <div class="menu-area pull-left">
+          <nav class="main-menu clearfix">
+            <!--Keep This Empty / Menu will come through Javascript-->
+          </nav>
+        </div>
+        <div class="btn-box pull-right">
+          <a href="index-4.html"
+            >Request Demo<i class="fas fa-angle-right"></i></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
