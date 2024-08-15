@@ -4,6 +4,7 @@ import MainHeader from "../../components/headers/main-header.astro";
 import MainFooter from "../../components/footers/main-footer.astro";
 import Clients from "./clients.astro";
 import HeroSlider from "./hero-slider.astro";
+import Process from "./process.astro";
 ---
 
 <Layout title="Smart Bird Home Automations | Oxford & Bucks">
@@ -11,21 +12,7 @@ import HeroSlider from "./hero-slider.astro";
     <MainHeader />
     <HeroSlider />
     <Clients />
-    <!-- Calendly link widget begin -->
-    <link
-      href="https://assets.calendly.com/assets/external/widget.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://assets.calendly.com/assets/external/widget.js"
-      type="text/javascript"
-      async></script>
-    <a
-      href=""
-      onclick="Calendly.initPopupWidget({url: 'https://calendly.com/brad-128bitstudios?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;"
-      >Schedule time with me</a
-    >
-    <!-- Calendly link widget end -->
+    <Process />
     <MainFooter />
     <!--Scroll to top-->
     <button class="scroll-top scroll-to-target" data-target="html">
