@@ -72,10 +72,59 @@ const ContactBlock = `
     padding-bottom: 25px;
   }
 
+  .logo-mobile {
+    display: none;
+  }
+
+  .mobile-menu .close-btn {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .mobile-menu-visible .mobile-menu .menu-box > div {
+    margin-top: 67px;
+  }
+
   @media only screen and (max-width: 499px) {
     .main-header.style-four .header-top .social-links {
       margin-top: 5px;
       float: inherit;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .page-header-mobile-info {
+      display: none !important;
+    }
+
+    .auto-container.xyz {
+      padding: 0px;
+    }
+
+    .auto-container.xyz .main-box {
+      border-radius: 0px !important;
+    }
+
+    .auto-container.xyz .outer-box {
+      padding-right: 10px !important;
+    }
+
+    .auto-container.xyz .btn-box {
+      margin-top: 67px;
+      margin-right: 5px;
+    }
+
+    .auto-container.xyz .btn-box a {
+      border-bottom-left-radius: 5px;
+    }
+
+    .auto-container.xyz .logo-mobile {
+      display: block;
+      margin-top: 5px;
+    }
+
+    .auto-container.xyz .mobile-menu .close-btn {
+
     }
   }
 
@@ -131,7 +180,7 @@ const ContactBlock = `
       </div>
     </div>
   </div>
-  <div class="auto-container">
+  <div class="auto-container xyz">
     <div class="main-header-box">
       <div class="main-box">
         <div class="header-upper-2 auto-hidden">
@@ -152,109 +201,133 @@ const ContactBlock = `
         </div>
         <div class="header-lower">
           <div class="outer-box clearfix">
-            <div class="menu-area clearfix pull-left">
+            <div class="pull-left">
+              <figure class="logo-mobile">
+                <a href="index.html"
+                  ><img src="assets/images/logo-wide.png" alt="" width="250" /></a
+                >
+              </figure>
+            </div>
+            <div class="menu-area clearfix pull-right">
               <!--Mobile Navigation Toggler-->
               <div class="mobile-nav-toggler">
                 <i class="icon-bar"></i>
                 <i class="icon-bar"></i>
                 <i class="icon-bar"></i>
               </div>
+            </div>
+            <div class="menu-area clearfix pull-left">
               <nav class="main-menu navbar-expand-md navbar-light">
-                <div
-                  class="collapse navbar-collapse show clearfix"
-                  id="navbarSupportedContent"
-                >
+                <div class="collapse navbar-collapse show clearfix">
                   <ul class="navigation clearfix">
-                    <li class="current dropdown">
-                      <a href="index.html">Home</a>
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
+                    <li class="dropdown">
+                      <a>Smart Homes</a>
                       <ul>
-                        <li><a href="index.html">CCTV</a></li>
-                        <li><a href="index-2.html">Cyber Security</a></li>
-                        <li><a href="index-3.html">Body Guard</a></li>
-                        <li><a href="index-4.html">Smart Home</a></li>
-                        <li><a href="index-5.html">Locksmiths</a></li>
-                        <li><a href="index-6.html">Energy Management</a></li>
-                        <li><a href="index-onepage.html">OnePage Home</a></li>
-                        <li><a href="index-rtl.html">RTL Home</a></li>
+                        <li>
+                          <a href="/smart-homes/lighting">
+                            Lighting
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/smart-homes/energy">
+                            Energy Monitoring
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-bolt"></i>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/smart-homes/hvac">
+                            Heating & Cooling
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-fire"></i>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/smart-homes/displays">
+                            Displays
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/smart-homes/automation">
+                            Home Automation
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-robot"></i>
+                            </div>
+                          </a>
+                        </li>
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="index.html">About</a>
+                      <a>Security</a>
                       <ul>
-                        <li><a href="about.html">Our Company</a></li>
-                        <li><a href="team.html">Professional Team</a></li>
+                        <li>
+                          <a href="/security/cctv">
+                            CCTV
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-video"></i> <!-- Replace this with an appropriate icon if needed -->
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/security/doors-and-windows">
+                            Doors & Windows
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-door-open"></i>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/security/motion-detection">
+                            Motion Detection
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-person-walking"></i>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/security/flood-detection">
+                            Flood Detection
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-droplet"></i>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/security/gas-detection">
+                            Gas Detection
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-fire-flame-simple"></i>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/security/smoke-detection">
+                            Smoke Detection
+                            <div class="pull-right" style="width: 25px; text-align: center">
+                              <i class="fa-solid fa-fire"></i>
+                            </div>
+                          </a>
+                        </li>
+                        
                       </ul>
                     </li>
-                    <li class="dropdown">
-                      <a href="index.html">Services</a>
-                      <ul>
-                        <li><a href="service.html">All Services</a></li>
-                        <li>
-                          <a href="service-details.html">Install & Configure</a>
-                        </li>
-                        <li>
-                          <a href="service-details-2.html">Repair & Service</a>
-                        </li>
-                        <li>
-                          <a href="service-details-3.html">Maintenance</a>
-                        </li>
-                        <li>
-                          <a href="service-details-4.html">Video Verification</a
-                          >
-                        </li>
-                        <li>
-                          <a href="service-details-5.html">Video Surveillence</a
-                          >
-                        </li>
-                        <li>
-                          <a href="service-details-6.html"
-                            >Interactive Security</a
-                          >
-                        </li>
-                      </ul>
+                    <li>
+                      <a href="/networking">Networking</a>
                     </li>
-                    <li class="dropdown">
-                      <a href="index.html">Shop</a>
-                      <ul>
-                        <li><a href="shop.html">Products</a></li>
-                        <li><a href="shop-details.html">Single Product</a></li>
-                        <li><a href="cart.html">Shopping Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="account.html">My Account</a></li>
-                      </ul>
+                    <li>
+                      <a href="/about-us">About Us</a>
                     </li>
-                    <li class="dropdown">
-                      <a href="index.html">Blog</a>
-                      <ul>
-                        <li><a href="blog.html">Blog Grid View</a></li>
-                        <li><a href="blog-2.html">Blog With Sidebar</a></li>
-                        <li><a href="blog-details.html">Single Post</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="index.html">Pages</a>
-                      <ul>
-                        <li class="dropdown">
-                          <a href="index.html">Projects</a>
-                          <ul>
-                            <li><a href="project.html">3 Columns Grid</a></li>
-                            <li><a href="project-2.html">4 Columns Grid</a></li>
-                            <li>
-                              <a href="project-3.html">Title Overlay 01</a>
-                            </li>
-                            <li>
-                              <a href="project-4.html">Title Overlay 02</a>
-                            </li>
-                            <li>
-                              <a href="project-details.html">Project Details</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="faq.html">Faq’s</a></li>
-                        <li><a href="error.html">404</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </div>
               </nav>
@@ -288,3 +361,59 @@ const ContactBlock = `
     </div>
   </div>
 </header>
+
+<!-- Mobile Menu  -->
+<div class="mobile-menu">
+  <div class="menu-backdrop"></div>
+  <div class="close-btn"><i class="fas fa-times"></i></div>
+
+  <nav class="menu-box">
+      <!-- <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="" title=""></a>
+      </div> -->
+      <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+      </div>
+      <div class="contact-info">
+          <h4>Contact Info</h4>
+          <ul>
+              <li>Oxford & Bucks</li>
+              <li><a href="tel:01865704177">01865 704177</a></li>
+              <li><a href="mailto:hello@smartbirdha.com">hello@smartbirdha.com</a></li>
+          </ul>
+      </div>
+      <div class="social-links">
+          <ul class="clearfix">
+            <li>
+              <a href="https://facebook.com/smartbirdha" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/smartbirdha" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/104221943" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://tiktok.com/@smartbirdha" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com/@smartbirdha" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/smartbirdha" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<!-- End Mobile Menu -->

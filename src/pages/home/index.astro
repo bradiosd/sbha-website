@@ -1,18 +1,22 @@
 ---
 import Layout from "../../layouts/layout.astro";
-import Preloader from "../../components/Preloader.astro";
+import Preloader from "../../components/preloader.astro";
 import MainHeader from "../../components/headers/main-header.astro";
-import Subscribe from "./subscribe.astro";
+import MainFooter from "../../components/footers/main-footer.astro";
 import Clients from "./clients.astro";
 import HeroSlider from "./hero-slider.astro";
 ---
 
 <Layout title="Smart Bird Home Automations | Oxford & Bucks">
   <div class="boxed_wrapper gradient-color">
-    <!-- <Preloader /> -->
+    <Preloader />
     <MainHeader />
     <HeroSlider />
     <Clients />
-    <Subscribe />
+    <MainFooter />
+    <!--Scroll to top-->
+    <button class="scroll-top scroll-to-target" data-target="html">
+      <span class="fal fa-long-arrow-up"></span>
+  </button>
   </div>
 </Layout>
