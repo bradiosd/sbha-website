@@ -1,6 +1,4 @@
 ---
-import { GoogleAnalytics } from 'astro-google-analytics';
-
 interface Props {
   title: string;
 }
@@ -37,7 +35,23 @@ const { title } = Astro.props;
     <link href="/assets/css/color.css" rel="stylesheet" />
     <link href="/assets/css/style.css" rel="stylesheet" />
     <link href="/assets/css/responsive.css" rel="stylesheet" />
-    <GoogleAnalytics id="G-451184061" />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4V2DYY5Y0H"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-4V2DYY5Y0H");
+    </script>
   </head>
 
   <body>
