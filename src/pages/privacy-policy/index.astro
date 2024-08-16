@@ -1,0 +1,44 @@
+---
+import MainFooter from "../../components/footers/main-footer.astro";
+import MainHeader from "../../components/headers/main-header.astro";
+import Terms from "../../components/pages/privacy-policy/terms.astro";
+import Layout from "../../layouts/layout.astro";
+---
+
+<style is:inline>
+  @media only screen and (max-width: 767px) {
+    .page-title {
+      padding-top: 200px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .page-title {
+      padding-top: 200px !important;
+    }
+  }
+</style>
+
+<Layout title="Smart Bird Home Automations | Oxford & Bucks">
+  <div class="boxed_wrapper gradient-color">
+    <MainHeader />
+    <section
+      class="page-title"
+      style="background-image: url(/assets/images/banner/cameras.png);"
+    >
+      <div class="auto-container">
+        <div class="content-box">
+          <div class="title">
+            <h1>Privacy Policy</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="margin: 50px">
+      <div class="auto-container">
+        <Terms />
+      </div>
+    </section>
+    <MainFooter />
+  </div>
+</Layout>
