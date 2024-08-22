@@ -1,4 +1,6 @@
 ---
+import RequestADemo from "../request-a-demo.astro";
+
 const SocialBlock = `
   <div class="info clearfix pull-right">
     <ul class="social-links clearfix">
@@ -86,6 +88,21 @@ const ContactBlock = `
     font-size: 30px;
   }
 
+  .mobile-menu .btn-box a {
+    margin: 10px;
+    background: -webkit-linear-gradient(0deg, #5974ce, #6ea9e3 100%);
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 20px);
+    text-align: center;
+    font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    padding: 19.5px 20px;
+    border-radius: 5px;
+  }
+
   .mobile-menu-visible .mobile-menu .menu-box > div {
     margin-top: 67px;
   }
@@ -121,8 +138,9 @@ const ContactBlock = `
     }
 
     .auto-container.xyz .btn-box {
-      margin-top: 67px;
-      margin-right: 5px;
+      display: none;
+      /* margin-top: 67px;
+      margin-right: 5px; */
     }
 
     .auto-container.xyz .btn-box a {
@@ -383,23 +401,7 @@ const ContactBlock = `
                 </div>
               </nav>
             </div>
-            <div class="btn-box">
-              <!-- Calendly link widget begin -->
-              <link
-                href="https://assets.calendly.com/assets/external/widget.css"
-                rel="stylesheet"
-              />
-              <script
-                src="https://assets.calendly.com/assets/external/widget.js"
-                type="text/javascript"
-                async></script>
-              <a
-                href=""
-                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/brad-128bitstudios?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;"
-                >Request a Demo <i class="fas fa-angle-right"></i></a
-              >
-              <!-- Calendly link widget end -->
-            </div>
+            <RequestADemo />
           </div>
         </div>
       </div>
@@ -429,8 +431,8 @@ const ContactBlock = `
 <div class="mobile-menu">
   <div class="menu-backdrop"></div>
   <div class="close-btn"><i class="fas fa-times"></i></div>
-
   <nav class="menu-box">
+    <RequestADemo />
     <!-- <div class="nav-logo"><a href="/"><img src="assets/images/logo-2.png" alt="" title=""></a>
       </div> -->
     <div class="menu-outer">

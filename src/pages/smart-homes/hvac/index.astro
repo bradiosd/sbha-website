@@ -1,0 +1,171 @@
+---
+import MainFooter from "../../../components/footers/main-footer.astro";
+import MainHeader from "../../../components/headers/main-header.astro";
+import Layout from "../../../layouts/layout.astro";
+---
+
+<style is:inline>
+  .energy-saving-section {
+    padding-top: 100px;
+  }
+
+  .clients-carousel {
+    margin: 30px 0;
+  }
+
+  .acc-btn.active.red .icon-box,
+  .acc-btn.active.red h4 {
+    background: rgb(196, 59, 59) !important;
+    color: #fff !important;
+  }
+
+  .acc-btn.red .icon-box,
+  .acc-btn.red h4 {
+    color: rgb(196, 59, 59) !important;
+  }
+
+  .acc-btn.active.blue .icon-box,
+  .acc-btn.active.blue h4 {
+    background: rgb(83, 83, 235) !important;
+    color: #fff !important;
+  }
+
+  .acc-btn.blue .icon-box,
+  .acc-btn.blue h4 {
+    color: rgb(83, 83, 235) !important;
+  }
+
+  .acc-btn.active.aqua .icon-box,
+  .acc-btn.active.aqua h4 {
+    background: rgb(21, 163, 173) !important;
+    color: #fff !important;
+  }
+
+  .acc-btn.aqua .icon-box,
+  .acc-btn.aqua h4 {
+    color: rgb(21, 163, 173) !important;
+  }
+</style>
+
+<Layout title="Smart Bird Home Automations | Oxford & Bucks">
+  <div class="boxed_wrapper gradient-color">
+    <MainHeader />
+    <section
+      class="page-title"
+      style="background-image: url(/assets/images/smart-home-devices-ai-5.jpg);"
+    >
+      <div class="auto-container">
+        <div class="content-box">
+          <div class="title">
+            <h1>Heating &amp; Cooling</h1>
+          </div>
+          <ul class="bread-crumb text-center clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li>Smart Homes</li>
+            <li>HVAC</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="energy-saving-section bg-color-6">
+      <div class="auto-container">
+        <div class="row clearfix">
+          <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+            <div class="content_block_14">
+              <div class="content-box">
+                <ul class="accordion-box">
+                  <li class="accordion block active-block">
+                    <div class="acc-btn red active">
+                      <div class="icon-box"><i class="fa fa-fire"></i></div>
+                      <div class="icon-outer">
+                        <i class="icon-down-chevron"></i>
+                      </div>
+                      <h4>Heating</h4>
+                    </div>
+                    <div class="acc-content current">
+                      <p>
+                        Control all of your radiators and boiler in the home.
+                        Have the rooms warm up when you are about to get ready
+                        for work or turn off when you are out to save money.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion block">
+                    <div class="acc-btn blue">
+                      <div class="icon-box">
+                        <i class="fa fa-snowflake"></i>
+                      </div>
+                      <div class="icon-outer">
+                        <i class="icon-down-chevron"></i>
+                      </div>
+                      <h4>Cooling</h4>
+                    </div>
+                    <div class="acc-content">
+                      <p>
+                        On hot days, have our automation system turn off all of
+                        the radiators then turn on your air conditioning unit.
+                        If you don't have one you can attach a fan to the
+                        system, and have it turn on automatically to keep a
+                        consistent temperature.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion block">
+                    <div class="acc-btn aqua">
+                      <div class="icon-box"><i class="fa fa-droplet"></i></div>
+                      <div class="icon-outer">
+                        <i class="icon-down-chevron"></i>
+                      </div>
+                      <h4>Humidity</h4>
+                    </div>
+                    <div class="acc-content">
+                      <p>
+                        Detect humidity in rooms throughout the home and turn on
+                        portable humidifers or enable slow fan control to keep
+                        your rooms perfect for you. Or, another solution is to
+                        purchase a humidity spray device and spray at regular
+                        intervals into a room to get to your ideal humidity!
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="clients-carousel owl-carousel owl-theme owl-nav-none owl-dots-none"
+            >
+              <figure class="clients-logo-box">
+                <a href="index.html"
+                  ><img src="/assets/images/brands/tado.png" alt="" /></a
+                >
+              </figure>
+              <figure class="clients-logo-box">
+                <a href="index.html"
+                  ><img src="/assets/images/brands/google-nest.png" alt="" /></a
+                >
+              </figure>
+              <figure class="clients-logo-box">
+                <a href="index.html"
+                  ><img src="/assets/images/brands/ecobee.png" alt="" /></a
+                >
+              </figure>
+              <figure class="clients-logo-box">
+                <a href="index.html"
+                  ><img src="/assets/images/brands/hive.png" alt="" /></a
+                >
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+            <div class="image-box">
+              <figure class="image">
+                <img src="/assets/images/hvac-phone.png" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <MainFooter />
+</Layout>
