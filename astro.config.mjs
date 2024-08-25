@@ -9,7 +9,9 @@ const site = 'https://smartbirdha.co.uk'
 export default defineConfig({
   site,
   output: 'server',
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
   redirects: {
     '/': '/home'
   },

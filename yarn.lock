@@ -892,6 +892,11 @@
     node-gyp-build "^4.2.2"
     resolve-from "^5.0.0"
 
+"@vercel/speed-insights@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@vercel/speed-insights/-/speed-insights-1.0.12.tgz#71c2edffdedae98d34e306d7b0a573e6816898b4"
+  integrity sha512-ZGQ+a7bcfWJD2VYEp2R1LHvRAMyyaFBYytZXsfnbOMkeOvzGNVxUL7aVUvisIrTZjXTSsxG45DKX7yiw6nq2Jw==
+
 "@volar/kit@~2.4.0-alpha.15":
   version "2.4.0-alpha.18"
   resolved "https://registry.yarnpkg.com/@volar/kit/-/kit-2.4.0-alpha.18.tgz#b3c87cd72e08b227a5a4aa01178c27fa90c79142"
