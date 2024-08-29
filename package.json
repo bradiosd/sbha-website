@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "deploy-aws": "yarn build && aws s3 cp dist/ s3://smartbirdha.co.uk/ --recursive",
-    "deploy-vercel": "vercel --prod"
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.2",
