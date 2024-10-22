@@ -3,19 +3,26 @@
 ---
 
 <div class="btn-box">
-  <!-- Calendly link widget begin -->
+  <!-- Google Calendar Appointment Scheduling begin -->
   <link
-    href="https://assets.calendly.com/assets/external/widget.css"
+    href="https://calendar.google.com/calendar/scheduling-button-script.css"
     rel="stylesheet"
   />
   <script
-    src="https://assets.calendly.com/assets/external/widget.js"
-    type="text/javascript"
+    src="https://calendar.google.com/calendar/scheduling-button-script.js"
     async></script>
-  <a
-    href=""
-    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/brad-128bitstudios?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;"
-    >Request a Demo <i class="fas fa-angle-right"></i></a
-  >
-  <!-- Calendly link widget end -->
+  <script>
+    (function () {
+      var target = document.currentScript;
+      window.addEventListener("load", function () {
+        calendar.schedulingButton.load({
+          url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2mJXFb5dbIjSRezBFvLFnJBslLTSM2fK4m9uKsFmJ9ZMCax0kDWpUIVqkEVkTNHnO9SB-THDqR?gv=true",
+          color: "#039BE5",
+          label: "Book an appointment",
+          target,
+        });
+      });
+    })();
+  </script>
+  <!-- end Google Calendar Appointment Scheduling -->
 </div>
